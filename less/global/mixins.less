@@ -1,0 +1,18 @@
+.background-img(@src) {
+  background-image: url(@src);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gradient-bg(@first, @second, @third) {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, @first 0%, @second 50%, @third 100%);
+  opacity: 0.6;
+  z-index: -1;
+}

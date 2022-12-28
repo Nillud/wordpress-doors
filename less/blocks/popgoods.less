@@ -1,0 +1,32 @@
+.popgoods {
+  .background-img("../img/background.jpg");
+
+  .row:not(:first-child) {
+    padding-bottom: 3rem;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+}
+
+.popgoods .row {
+  @media (max-width: 992px) {
+    &:not(:first-child) {
+      padding-bottom: 0;
+    }
+
+    div {
+      margin-bottom: 1.5rem;
+    }
+
+    h4 {
+      padding: 1rem;
+      margin: 1rem 3rem;
+    }
+
+    .title {
+      margin: 0;
+    }
+  }
+}

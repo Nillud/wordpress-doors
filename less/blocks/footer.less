@@ -1,0 +1,28 @@
+footer {
+  border: 1px solid @primary-text;
+  color: @primary-text;
+  background-color: @white-color;
+
+  @media (max-width: 992px) {
+    font-size: 0.8em;
+  }
+}
+
+.nav-item a {
+  color: @primary-text;
+
+  &:hover {
+    color: @primary-color;
+  }
+
+  &.active {
+    color: @primary-color;
+  }
+}
+
+footer p {
+  span {
+    color: @primary-color;
+  }
+}
+

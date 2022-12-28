@@ -1,0 +1,55 @@
+.measur {
+  position: relative;
+  // .background-img("../img/fiedback.png");
+
+  &::before {
+    .gradient-bg(@dark-primary-color, @primary-color, @light-primary-color);
+  }
+}
+
+.measur .row {
+  padding: 3rem 0;
+
+  h5 {
+    font-size: 1.2em;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
+  p {
+    padding: 0.8em;
+  }
+
+  img {
+    margin: 1.5rem;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid @white-color;
+    margin-bottom: 1rem;
+
+    &::placeholder {
+      color: @white-color;
+    }
+  }
+
+  button {
+    color: @white-color;
+    border: 2px solid @white-color;
+    padding: 1rem;
+
+    @media (max-width: 992px) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

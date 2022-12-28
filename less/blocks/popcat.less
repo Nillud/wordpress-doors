@@ -1,0 +1,42 @@
+.popcat {
+  padding-bottom: 4rem;
+  .background-img("../img/background.jpg");
+}
+
+.popcat a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  p {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: @primary-text;
+    text-shadow: 0 0 3px @primary-color;
+    font-size: 1.4em;
+    z-index: 100;
+    transition: all 1s;
+
+    @media (max-width: 992px) {
+      font-size: 0.8em;
+    }
+  }
+
+  img {
+    transition: all 1s;
+  }
+
+  &:hover {
+    img {
+      background-color: @light-primary-color;
+      transform: scale(1.1);
+    }
+
+    p {
+      transform: scale(0.9);
+    }
+  }
+}
